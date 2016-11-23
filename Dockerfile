@@ -1,3 +1,3 @@
 FROM index.qiniu.com/kci/golang:1.6
-ADD	helloworld /
+ADD	go/helloworld /
 CMD ["/helloworld"]
