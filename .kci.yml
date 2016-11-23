@@ -8,7 +8,7 @@ index.qiniu.com/kci/plugin_docker:
     insecure: false
     storage_path: /cache/ihebe
     when:
-      event:  [push,pull_request,tag,deployment]
+      event: [push,pull_request,tag,deployment]
 index.qiniu.com/kci/plugin_email:
   recipients:
     - 1252680267@qq.com
