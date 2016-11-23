@@ -1,3 +1,3 @@
-FROM index.qiniu.com/library/alpine:3.4
+FROM index.qiniu.com/kci/golang:1.6
 ADD	helloworld /
 CMD ["/helloworld"]
