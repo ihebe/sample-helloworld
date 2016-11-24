@@ -3,14 +3,14 @@ pipeline:
     image: index.qiniu.com/kci/golang:1.6
     commands:
     - GOOS=linux GOARCH=amd64 go build go/helloworld.go
-  index.qiniu.com/kci/plugin_docker:
+  index.qbox.me/library/plugin_docker:
       appenv: test
       repo: hanchaojie/helloworld
       tag: latest
       file: Dockerfile
       when:
         event: [push,pull_request,tag,deployment]
-  index.qiniu.com/kci/plugin_email:
+  index.qbox.me/library/plugin_email:
     appenv: test
     recipients:
       - 1252680267@qq.com
