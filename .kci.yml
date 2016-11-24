@@ -4,14 +4,12 @@ pipeline:
     commands:
     - GOOS=linux GOARCH=amd64 go build go/helloworld.go
   index.qiniu.com/kci/plugin_docker:
-      appenv: test
       repo: hanchaojie/helloworld
       tag: latest
       file: Dockerfile
       when:
         event: [push,pull_request,tag,deployment]
   index.qiniu.com/kci/plugin_email:
-    appenv: test
     recipients:
       - 1252680267@qq.com
     when:
