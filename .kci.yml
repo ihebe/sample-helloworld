@@ -5,12 +5,13 @@ pipeline:
   clone:
     image:  index.qiniu.com/kci/plugin_git
     remote: git@github.com:ihebe/github_test.git
-    path: /workspace/github_test
+    # path: /workspace/github_test
   build:
     image: index.qiniu.com/kci/golang:1.6
     commands:
     - pwd
     - ls /workspace
+    - ls /workspace/test
     - GOOS=linux GOARCH=amd64 go build go/helloworld.go
   index.qiniu.com/kci/plugin_docker:
       repo: hanchaojie/helloworld
