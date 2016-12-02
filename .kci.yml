@@ -1,5 +1,6 @@
 workspace:
     base:   /workspace
+    path: /workspace/test
 pipeline:
   clone:
     image:  index.qiniu.com/kci/plugin_git
