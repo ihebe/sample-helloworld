@@ -9,7 +9,7 @@ pipeline:
     image: index.qiniu.com/kci/golang:1.6
     commands:
     - pwd
-    - ls workspace
+    - ls /workspace
     - GOOS=linux GOARCH=amd64 go build go/helloworld.go
   index.qiniu.com/kci/plugin_docker:
       repo: hanchaojie/helloworld
